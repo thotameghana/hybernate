@@ -1,0 +1,12 @@
+package com.hibernatemanager;
+
+import com.megha.entity.Employee;
+
+public class Launch {
+	public static void main(String[] args) {
+		HibernateManager hm=new HibernateManager();
+		hm.connect();
+		Employee e=new Employee(1, "Virat", "virat@gmail.com", "virat@123", "Banglore");
+		hm.add(e);
+	}
+}	

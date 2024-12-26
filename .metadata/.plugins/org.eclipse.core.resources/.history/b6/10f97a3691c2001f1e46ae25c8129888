@@ -1,0 +1,5 @@
+package com.megha.hibernateManager;
+
+public class HibernateManager {
+
+}

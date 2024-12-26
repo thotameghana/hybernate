@@ -1,0 +1,40 @@
+package com.megha.hibernatedaoImpl;
+
+import java.util.List;
+
+import com.megha.entity.Employee;
+import com.megha.hibernatedao.HibernateManagerDao;
+
+public class HibernateManagerDaoImpl implements HibernateManagerDao {
+
+	@Override
+	public void add(Employee e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<Employee> fetchAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employee fetchOne() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void update(int eid, String email) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void delete(int id) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

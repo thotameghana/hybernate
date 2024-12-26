@@ -1,0 +1,15 @@
+package com.megh.megha;
+
+import com.megha.entity.Student;
+import com.megha.hibernateManager.HibernateManager;
+
+public class Launch {
+	public static void main(String[] args) {
+		HibernateManager hm=new HibernateManager();
+		hm.connect();
+		
+		Student s=new Student(7, "virat", "virat@gmail.com", "87458743", 78000);
+		
+		hm.add(s);
+	}
+}

@@ -1,0 +1,24 @@
+package com.megha.hibernatedaoImpl;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.megha.entity.Employee;
+import com.megha.hibernatedao.HibernateManagerDao;
+
+public class HibernateManagerDaoImpl implements HibernateManagerDao{
+
+	private Configuration config;
+	private SessionFactory sf;
+	private Session session;
+
+	public void connect() {
+		config=new Configuration().configure();
+		sf=config.buildSessionFactory();
+		session=sf.openSession();
+	}
+	
+}

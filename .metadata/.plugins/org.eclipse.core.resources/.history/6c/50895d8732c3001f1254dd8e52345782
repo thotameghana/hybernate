@@ -1,0 +1,58 @@
+package com.megha.hibernatedaoImpl;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.megha.entity.Employee;
+import com.megha.hibernatedao.HibernateManagerDao;
+
+public class HibernateManagerDaoImpl implements HibernateManagerDao{
+
+	private Configuration config;
+	private SessionFactory sf;
+	private Session session;
+	private Transaction t;
+	
+	List<Employee> employeeList;
+
+	public void connect() {
+		config=new Configuration().configure();
+		sf=config.buildSessionFactory();
+		session=sf.openSession();
+	}
+	
+	public void add(Employee e) {
+		t=session.beginTransaction();
+		session.persist(e);
+		t.commit();
+		System.out.println("Data Inserted");
+	}
+
+	public List<Employee> fetchAll() {
+		employeeList=session.createQuery("from Employee").list();
+		return employeeList;
+	}
+
+	@Override
+	public Employee fetchOne(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void update(int eid, String email) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

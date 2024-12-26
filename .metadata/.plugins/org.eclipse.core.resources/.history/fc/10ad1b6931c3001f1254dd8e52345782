@@ -1,0 +1,28 @@
+package com.megha.entity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="Employee")
+public class Employee {
+	@Id
+	@Column(name="eid")
+	private int eid;
+	
+	@Column(name="ename")
+	private String ename;
+	
+	@Column(name="email")
+	private String email;
+	
+	@Column(name="password")
+	private String password;
+	
+	@Column(name="address")
+	private String address;
+	
+
+}

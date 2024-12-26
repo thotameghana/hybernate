@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
+    <fullyQualifiedTypeName name="com.megha.hibernateManager.HibernateManager"/>
+    <fullyQualifiedTypeName name="com.megha.entity.Student"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Table"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Column"/>
+    <fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.Session"/>
+    <fullyQualifiedTypeName name="com.hibernatemanager.HibernateManager"/>
+    <fullyQualifiedTypeName name="com.megha.entity.Employee"/>
+</qualifiedTypeNameHistroy>

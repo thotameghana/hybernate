@@ -1,0 +1,5 @@
+package com.megha.hibernatedao;
+
+public interface HibernateManagerDao {
+
+}
